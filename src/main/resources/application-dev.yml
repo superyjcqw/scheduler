@@ -1,0 +1,26 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /scheduler
+  tomcat:
+    uri-encoding: UTF-8
+    max-http-post-size: 10240000
+spring:
+ datasource:
+    db1:
+      jdbc-url : jdbc:mysql://10.10.10.198:3306/quartz_admin?characterEncoding=utf-8&useSSL=false
+      username : quartz_admin
+      password : xxxxxxx
+      driverClassName : com.mysql.jdbc.Driver
+    db2:
+      jdbc-url : jdbc:mysql://10.10.10.198:3306/scheduler?characterEncoding=utf-8&useSSL=false
+      username : scheduler
+      password : nmfzme3F0xiFJc19
+      driverClassName : com.mysql.jdbc.Driver
+ data:
+    mongodb:
+      host: 10.100.10.33
+      port: 27017
+      username: admin
+      password: xxxxxxx
+      database: wechat
